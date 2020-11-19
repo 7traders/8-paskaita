@@ -7,13 +7,13 @@
         display: inline-block;
         width: 600px;
         margin-left: calc(50% - 300px);
-        background-color: antiquewhite;
+        background-color: ;
     }
     .container > .row {
         display: inline-block;
         width: 1000px;
         margin-left: calc(50% - 500px);
-        background-color: ;
+        background-color: aqua;
     }
         .container > .row > .column {
             display: inline-block;
@@ -30,3 +30,45 @@
             }
 
 
+/* 320 - 480 - 780 - 1000 - 1400 - 1800 */
+
+@media (max-width: 1100px) {
+    .container > .row {
+        width: 800px;
+        margin-left: calc(50% - 400px);
+        background-color: tomato;
+    }
+}
+
+@media (max-width: 900px) {
+    .container > .row {
+        width: 600px;
+        margin-left: calc(50% - 300px);
+        background-color: orange;
+    }
+}
+
+@media (max-width: 700px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .container > .row-short {
+        width: 100%;
+        margin-left: 0;
+        background-color: red;
+    }
+    .container > .row {
+        width: 100%;
+        margin-left: 0;
+        background-color: yellow;
+    }
+        .container > .row > .column.left {
+            width: 100%;
+        }
+        .container > .row > .column.right {
+            width: 100%;
+            margin-left: 0;
+            margin-top: calc(var(--section-padding) * 2);
+        }
+}
