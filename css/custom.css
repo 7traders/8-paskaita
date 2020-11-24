@@ -56,8 +56,21 @@ footer.container {
 }
 
 .hero .form {
+    width: 90%;
     margin-bottom: var(--hero-space);    
 }
+    .hero .form > input {
+        width: 100%;
+        color: white;
+        background-color: transparent;
+        border-bottom-color: white;
+    }
+        .hero .form > input::placeholder {
+            color: white;
+        }
+    .hero .btn > input {
+        float: none;
+    }
 
 /* main content */
 
