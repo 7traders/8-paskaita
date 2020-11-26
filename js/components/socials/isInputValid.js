@@ -6,10 +6,6 @@
  * @param {object} data Data masyvas su objektais, kurie reprezentuoja social nuorodas
  * @returns {boolean} Jei patikrinimo metu randama logine duomenu kliada, tai grazina `false` kitu atveju `true`
  */
-
-
-
-
 function isInputValid(selector, data) {
     if (typeof selector !== 'string') {
         console.error("ERROR: selektorius turi buti tesktinio tipo");
