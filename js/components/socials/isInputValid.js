@@ -1,5 +1,13 @@
     // input validation
-function isInputValidation(data) {
+function isInputValid(selector, data) {
+    if (typeof selector !== 'string') {
+        console.error("ERROR: selektorius turi buti tesktinio tipo");
+        return false;
+    }
+    if (typeof selector === '') {
+        console.error("ERROR: selektorius negali buti tuscias");
+        return false;
+    }
     if (!Array.isArray(data)) {
         console.error('ERROR: social icon generuoti reikia array tipo duomenu');
         return false;
@@ -11,4 +19,4 @@ function isInputValidation(data) {
     return true;
 }
 
-export { isInputValidation }
+export { isInputValid }
