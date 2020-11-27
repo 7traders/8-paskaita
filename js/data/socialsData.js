@@ -26,10 +26,10 @@ const socialsData = [
     {
         icon: "rss",
         link: "#",
-    }
+    },
 ];
 
-export { socialsData };
+export { socialsData }
 
 
 
