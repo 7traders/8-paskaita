@@ -12,7 +12,7 @@ function renderClock(selector) {
         console.error('ERROR: selektorius turi buti tekstinio tipo');
         return false;
     }
-    if (selector !== '') {
+    if (selector == '') {
         console.error('ERROR: selektorius negali buti tuscias tekstas');
         return false;
     }
@@ -58,7 +58,7 @@ function renderClock(selector) {
                     <span>Days</span>
                 </div>
                 <div class="time-box">
-                    <div class="tme">${hours}</div>
+                    <div class="time">${hours}</div>
                     <span>Hours</span>
                 </div>
                 <div class="time-box">
