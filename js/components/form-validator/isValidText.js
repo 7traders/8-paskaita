@@ -13,4 +13,4 @@ function isValidText(text) {
     return true;
 }
 
-export { isValidText } 
+export { isValidText }
