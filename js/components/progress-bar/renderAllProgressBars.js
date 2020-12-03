@@ -7,7 +7,8 @@ import { renderProgressBar } from './renderProgressBar.js';
  * @param {Object[]} data
  * @param {string} data[].selector CSS like selektorius, kaip rasti vieta, kur sugeneruoti turini
  * @param {string} data[].title Progress bar pavadinimas
- * @param {string} data[].value Funkcijai tinkamai suveikus grazinas `true`, priesingu atveju - `false`
+ * @param {number} data[].value Funkcijai tinkamai suveikus grazinas `true`, priesingu atveju - `false`
+ * @returns {boolean} Funkcijai tinkamai suveikus grazinas `true`, priesingu atveju - `false`
  */
 function renderAllProgressBars(data) {
     if (!isValidProgressBarsList(data)) {
