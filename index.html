@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="./css/form.css">
     <link rel="stylesheet" href="./css/mouse.css">
     <link rel="stylesheet" href="./css/progress-bar.css">
+    <link rel="stylesheet" href="./css/toast.css">
     <!-- custom -->
     <link rel="stylesheet" href="./css/custom.css">
 </head>
@@ -30,9 +31,9 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero repellendus repudiandae totam eos. Quasi placeat quo quidem nemo, aperiam neque.</p>
             <div class="clock"></div>
             <form class="form">
-                <input type="email" placeholder="Email" required>
-                <!-- <input type="submit" value="Subscribe now!"> -->
-                <div class="btn">Subscribe now!</div>
+                <input type="email" placeholder="Email" required data-validation="email">
+                <input type="submit" value="Subscribe now!" class="btn">
+                <!-- <div class="btn">Subscribe now!</div> -->
             </form>
             <div class="mouse">
                 <div class="wheel"></div>
@@ -84,11 +85,11 @@
                 <h2>Have any question?</h2>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis modi aut <a href="mailto:vardenis@pastas.com">vardenis@pastas.com</a> expedita voluptatum recusandae ratione perspiciatis dolorum? Dolor, eum doloribus?</p>
                 <form class="form">
-                    <input type="text" placeholder="Name">
-                    <input type="email" placeholder="Email" required>
-                    <textarea maxlength="1000" placeholder="Message" required></textarea>
-                    <!-- <input type="submit" value="Send message"> -->
-                    <div class="btn">Send message</div>
+                    <input type="text" placeholder="Name" data-validation="name">
+                    <input type="email" placeholder="Email" data-validation="email">
+                    <textarea maxlength="1000" placeholder="Message" data-validation="text"></textarea>
+                    <input type="submit" value="Send message" class="btn">
+                    <!-- <div class="btn">Send message</div> -->
                 </form>               
             </div>
         </div>
